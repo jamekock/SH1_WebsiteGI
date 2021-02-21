@@ -1,0 +1,63 @@
+﻿    <!-- Page Content -->
+<div class="container">
+
+    <!-- Page Heading/Breadcrumbs -->
+    <h1 class="mt-4 mb-3">
+        Publicar
+        <small></small>
+    </h1>
+
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+            <a href="../Home/Index">Home</a>
+        </li>
+        <li class="breadcrumb-item active">Make Post</li>
+    </ol>
+
+    <!-- Contact Form -->
+    <!-- In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
+    <div class="row">
+        <div class="col-lg-8 mb-4">
+            <form enctype="multipart/form-data" action="../Admin/Create" method="POST" novalidate>
+                <div class="control-group form-group">
+                    <div class="controls">
+                        <label>Titulo:</label>
+                        <input type="text" class="form-control" name="titulo" id="titulo" required
+                               data-validation-required-message="Please enter your tittle.">
+                        <p class="help-block"></p>
+                    </div>
+                </div>
+                <div class="control-group form-group">
+                    <div class="controls">
+                        <label>Autor:</label>
+                        <input type="text" class="form-control" name="autor" id="autor" required
+                               data-validation-required-message="Please enter your autor.">
+                    </div>
+                </div>
+                <div class="control-group form-group">
+                    <div class="controls">
+                        <label>Url Image:</label>
+                        <input type="text" class="form-control" name="url_img" id="url_img" required
+                               data-validation-required-message="Please enter your autor.">
+                    </div>
+                </div>
+
+                <div class="control-group form-group">
+                    <div class="controls">
+                        <label>Contenido:</label>
+                        <textarea rows="10" cols="100" class="form-control" name="contenido" id="contenido" required
+                                  data-validation-required-message="Please enter your content" maxlength="999"
+                                  style="resize:none"></textarea>
+                    </div>
+                </div>
+                <div id="success"></div>
+                <!-- For success/fail messages -->
+                <button type="submit" class="btn btn-primary" id="sendMessageButton">Send</button>
+            </form>
+        </div>
+
+    </div>
+    <!-- /.row -->
+
+</div>
+<!-- /.container -->

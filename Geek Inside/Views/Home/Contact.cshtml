@@ -1,0 +1,89 @@
+﻿
+  <!-- Page Content -->
+<div class="container">
+
+    <!-- Page Heading/Breadcrumbs -->
+    <h1 class="mt-4 mb-3">
+        Contact
+        <small></small>
+    </h1>
+
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+            <a href="../Home/Index">Home</a>
+        </li>
+        <li class="breadcrumb-item active">Contact</li>
+    </ol>
+
+    <!-- Content Row -->
+    <div class="row">
+        <!-- Map Column -->
+        <div class="col-lg-8 mb-4">
+            <!-- Embedded Google Map -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7568.160077918813!2d-69.95299134188983!3d18.480033382049488!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x54ea81a6a270bb92!2sInstituto%20Nacional%20de%20Formaci%C3%B3n%20T%C3%A9cnico%20Profesional!5e0!3m2!1ses!2sdo!4v1612122879816!5m2!1ses!2sdo" width="100%" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
+        </div>
+        <!-- Contact Details Column -->
+        <div class="col-lg-4 mb-4">
+            <h3>Detalles de Contacto</h3>
+            <p>
+                <br>Av. John F. Kennedy, Santo Domingo
+                <br>
+            </p>
+            <p>
+                <abbr title="Phone">Telefono</abbr>: (829) 410-6827
+            </p>
+            <p>
+                <abbr title="Email">Correo</abbr>:
+                <a href="mailto:name@example.com">
+                    hola@geekinside.com
+                </a>
+            </p>
+            <p>
+                <abbr title="Hours">Horario</abbr>: Lunes - Viernes: 9:00 AM a 5:00 PM
+            </p>
+        </div>
+    </div>
+    <!-- /.row -->
+    <!-- Contact Form -->
+    <!-- In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
+    <div class="row">
+        <div class="col-lg-8 mb-4">
+            <h3>Envianos un mensaje</h3>
+            <form enctype="multipart/form-data" action="../Home/Contact" method="POST" novalidate>
+                <div class="control-group form-group">
+                    <div class="controls">
+                        <label>Nombre Completo:</label>
+                        <input type="text" class="form-control" name="name" id="name" required data-validation-required-message="Please enter your name.">
+                        <p class="help-block"></p>
+                    </div>
+                </div>
+                <div class="control-group form-group">
+                    <div class="controls">
+                        <label>Numero Telefono:</label>
+                        <input type="tel" class="form-control" name="phone" id="phone" required data-validation-required-message="Please enter your phone number.">
+                    </div>
+                </div>
+                <div class="control-group form-group">
+                    <div class="controls">
+                        <label>Email:</label>
+                        <input type="email" class="form-control" name="email" id="email" required data-validation-required-message="Please enter your email address.">
+                    </div>
+                </div>
+                <div class="control-group form-group">
+                    <div class="controls">
+                        <label>Mensaje:</label>
+                        <textarea rows="10" cols="100" class="form-control" name="message" id="message" required data-validation-required-message="Please enter your message" maxlength="999" style="resize:none"></textarea>
+                    </div>
+                </div>
+                <div id="success"></div>
+                <!-- For success/fail messages -->
+                <button type="submit" class="btn btn-primary" id="sendMessageButton">Send Message</button>
+            </form>
+        </div>
+
+    </div>
+    <!-- /.row -->
+
+</div>
+<!-- /.container -->
